@@ -23,6 +23,7 @@ public class Consumer {
         String bootstrapserver="127.0.0.1:9092";
         String topic="first_topic";
         String GroupId="my-application";
+        System.out.println("testing");
         properties.setProperty(ConsumerConfig.BOOTSTRAP_SERVERS_CONFIG,bootstrapserver);
         properties.setProperty(ConsumerConfig.KEY_DESERIALIZER_CLASS_CONFIG, StringDeserializer.class.getName());
         properties.setProperty(ConsumerConfig.VALUE_DESERIALIZER_CLASS_CONFIG, StringDeserializer.class.getName());
